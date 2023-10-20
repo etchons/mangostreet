@@ -11,9 +11,24 @@ config_version=5
 [application]
 
 config/name="Mango Street"
+run/main_scene="res://world.tscn"
 config/features=PackedStringArray("4.1", "Mobile")
+boot_splash/bg_color=Color(1, 1, 1, 1)
+boot_splash/image="res://Drawing-5.sketchpad (1).png"
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_height=1152
+
+[input]
+
+load={
+"deadzone": 0.5,
+"events": []
+}
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="mobile"

@@ -1,5 +1,16 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1697584020
+::res://::1697778356
+Drawing-5.sketchpad (1).png::CompressedTexture2D::7638274462301929910::1697660655::1697660656::1::::<><>::
+Hurt.png::CompressedTexture2D::9147465685324495512::1697778356::1697778356::1::::<><>::
 icon.svg::CompressedTexture2D::9076574911768162803::1697576198::1697576202::1::::<><>::
+player.tscn::PackedScene::8649994832301899656::1697774110::0::1::::<><>::uid://cthqpwfr3ymk8::::res://Blue_witch/B_witch_idle.png<>res://player1.gd
 README.md::TextFile::-1::1697576171::0::1::::<><>::
-world.tscn::PackedScene::6067381674247823875::1697580837::0::1::::<><>::
+player1.gd::GDScript::-1::1697743297::0::1::::<>AnimatedSprite2D<>::
+world.tscn::PackedScene::6067381674247823875::1697743280::0::1::::<><>::uid://dviefexe83d3u::::res://player.tscn
+::res://Blue_witch/::1697684380
+B_witch_attack.png::CompressedTexture2D::2342430428936343020::1697684380::1697684380::1::::<><>::
+B_witch_charge.png::CompressedTexture2D::788128825157709269::1697684380::1697684380::1::::<><>::
+B_witch_death.png::CompressedTexture2D::6414878586074230044::1697684380::1697684380::1::::<><>::
+B_witch_idle.png::CompressedTexture2D::6121879463628575109::1697684380::1697684380::1::::<><>::
+B_witch_run.png::CompressedTexture2D::3507368686911823877::1697684380::1697684380::1::::<><>::
+B_witch_take_damage.png::CompressedTexture2D::1454052735374593713::1697684380::1697684380::1::::<><>::

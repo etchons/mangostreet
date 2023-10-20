@@ -1,0 +1,63 @@
+[gd_scene load_steps=10 format=3 uid="uid://dviefexe83d3u"]
+
+[ext_resource type="Texture2D" uid="uid://cthqpwfr3ymk8" path="res://Blue_witch/B_witch_idle.png" id="1_rhcl2"]
+[ext_resource type="Script" path="res://player1.gd" id="2_26ugv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s325j"]
+atlas = ExtResource("1_rhcl2")
+region = Rect2(0, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ugag1"]
+atlas = ExtResource("1_rhcl2")
+region = Rect2(0, 48, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1fg27"]
+atlas = ExtResource("1_rhcl2")
+region = Rect2(0, 96, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_557pi"]
+atlas = ExtResource("1_rhcl2")
+region = Rect2(0, 144, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7cjdr"]
+atlas = ExtResource("1_rhcl2")
+region = Rect2(0, 192, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hldug"]
+atlas = ExtResource("1_rhcl2")
+region = Rect2(0, 240, 32, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nny37"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s325j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ugag1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1fg27")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_557pi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7cjdr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hldug")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[node name="Player" type="AnimatedSprite2D"]
+position = Vector2(607, 391)
+scale = Vector2(4.45, 4.45)
+sprite_frames = SubResource("SpriteFrames_nny37")
+animation = &"idle"
+frame = 5
+frame_progress = 0.290593
+script = ExtResource("2_26ugv")
