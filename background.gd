@@ -17,8 +17,10 @@ func _process(delta):
 func timer_to_instance():
 	var s_time = Time.get_ticks_msec()
 	if (s_time > 5000):
-		pass #replace with instantiate
+		inst(Vector2(1575,0))
 
 
-
-	
+func inst(pos):
+	var instance = enemyinstance.instantiate()
+	instance.position = pos
+	add_child(instance)
