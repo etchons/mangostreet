@@ -1,0 +1,9 @@
+res://musicbox.tscn
+res://background.gd
+res://enemy_for_musicbox.tscn
+res://player.tscn
+res://player_2.tscn
+res://p_1_winscreen_mb.tscn
+res://p_2_winscreen_mb.tscn
+res://Area2D2.gd
+res://player_2_area2d_script_script.gd
