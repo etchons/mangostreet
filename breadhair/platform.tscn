@@ -1,0 +1,4 @@
+[gd_scene format=3 uid="uid://d070j46d30car"]
+
+[node name="Platform" type="StaticBody2D"]
+position = Vector2(629, 606)

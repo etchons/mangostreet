@@ -1,0 +1,58 @@
+[gd_scene load_steps=8 format=3 uid="uid://b5tamqmv3ugbn"]
+
+[ext_resource type="Script" path="res://breadhair/player.gd" id="1_e3br3"]
+[ext_resource type="Texture2D" uid="uid://5170h3ykw2yn" path="res://breadhair/hair.png" id="2_6xuop"]
+[ext_resource type="Script" path="res://breadhair/Area2D_p1.gd" id="3_lxvkj"]
+[ext_resource type="Texture2D" uid="uid://bn42wfib5368i" path="res://breadhair/imageedit_4_4139382260.png" id="3_sf3mq"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_iejt5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_6xuop")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_sf3mq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_6xuop")
+}],
+"loop": false,
+"name": &"white",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2xhbk"]
+size = Vector2(59, 59)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a0c8m"]
+size = Vector2(76, 67.25)
+
+[node name="player" type="CharacterBody2D"]
+script = ExtResource("1_e3br3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -64)
+scale = Vector2(0.13, 0.13)
+sprite_frames = SubResource("SpriteFrames_iejt5")
+animation = &"white"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-3.5, -64)
+shape = SubResource("RectangleShape2D_2xhbk")
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("3_lxvkj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-4, -64)
+shape = SubResource("RectangleShape2D_a0c8m")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered_real"]
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_of_player1_entered"]
+[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited_p1"]

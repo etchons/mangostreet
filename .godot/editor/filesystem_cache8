@@ -1,43 +1,63 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1698204687
+::res://::1698351131
+::res://breadhair/::1698354243
+Area2D_p1.gd::GDScript::-1::1698276379::0::1::::<>Area2D<>::
+bar.png::CompressedTexture2D::6440071187404484606::1698266785::1698266785::1::::<><>::
+bread.png::CompressedTexture2D::2705923696494186765::1698266785::1698266785::1::::<><>::
+Camera2D.gd::GDScript::-1::1698212076::0::1::::<>Camera2D<>::
+hair.png::CompressedTexture2D::2161327131385359865::1698266785::1698266785::1::::<><>::
+imageedit_4_4139382260.png::CompressedTexture2D::3360421527187706822::1698352112::1698352112::1::::<><>::
+main.tscn::PackedScene::2020959042985572460::1698354111::0::1::::<><>::uid://b5tamqmv3ugbn::::res://breadhair/player.tscn<>uid://d070j46d30car::::res://breadhair/platform.tscn<>uid://bs32b5bimcf77::::res://breadhair/player_2.tscn<>uid://cx0vbcqb5ycqw::::res://breadhair/bar.png<>uid://cbejpqwk657qv::::res://musicbox/ARCADECLASSIC.TTF<>res://breadhair/RichTextLabel.gd<>uid://csje7ecbuahia::::res://musicbox/bg.png<>res://breadhair/AnimatedSprite2D.gd
+newby.png::CompressedTexture2D::5813092676599589029::1698354243::1698354243::1::::<><>::
+pixil-frame-0 (7).png::CompressedTexture2D::3211695021955324194::1698210230::1698210230::1::::<><>::
+platform.tscn::PackedScene::8981578798365130945::1698354111::0::1::::<><>::
+player2.gd::GDScript::-1::1698277280::0::1::::<>CharacterBody2D<>::
+player.gd::GDScript::-1::1698354051::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::4531331459591676743::1698354111::0::1::::<><>::res://breadhair/player.gd<>uid://5170h3ykw2yn::::res://breadhair/hair.png<>res://breadhair/Area2D_p1.gd<>uid://bn42wfib5368i::::res://breadhair/imageedit_4_4139382260.png
+player_2.tscn::PackedScene::3709265168514870788::1698354111::0::1::::<><>::res://breadhair/player2.gd<>uid://bes1fye0ofnuj::::res://breadhair/bread.png
+AnimatedSprite2D.gd::GDScript::-1::1698353423::0::1::::<>AnimatedSprite2D<>::
+RichTextLabel.gd::GDScript::-1::1698352714::0::1::::<>RichTextLabel<>::
+::res://musicbox/::1698353284
 AnimatedSprite2Dpart2.gd::GDScript::-1::1698155022::0::1::::<>AnimatedSprite2D<>::
 animmcbox.gd::GDScript::-1::1698155022::0::1::::<>AnimatedSprite2D<>::
-Area2D2.gd::GDScript::-1::1698155022::0::1::::<>Area2D<>::
+ARCADECLASSIC.TTF::FontFile::4851861836740242005::1698352792::1698352793::1::::<><>::
+Area2D2.gd::GDScript::-1::1698208092::0::1::::<>Area2D<>::
 Area2D.gd::GDScript::-1::1698155022::0::1::::<>CharacterBody2D<>::
-background.gd::GDScript::-1::1698155022::0::1::::<>AnimatedSprite2D<>::
+background.gd::GDScript::-1::1698205300::0::1::::<>AnimatedSprite2D<>::
+bg.png::CompressedTexture2D::6055120179288525452::1698353283::1698353284::1::::<><>::
 CollisionShape2D.gd::GDScript::-1::1698155022::0::1::::<>CollisionShape2D<>::
 ColorRect.gd::GDScript::-1::1698155022::0::1::::<>ColorRect<>::
 enemy.gd::GDScript::-1::1698155022::0::1::::<>ColorRect<>::
-enemy_for_musicbox.tscn::PackedScene::688677886657207024::1698155022::0::1::::<><>::res://Area2D.gd<>uid://p7blvjhdd4ay::::res://images/pixilart-sprite (3).png<>res://posiitoenemy.gd
+enemy_for_musicbox.tscn::PackedScene::688677886657207024::1698205076::0::1::::<><>::res://Area2D.gd<>uid://p7blvjhdd4ay
 enemy_musicbox.tscn::PackedScene::5061723820250088063::1698155022::0::1::::<><>::
-icon.svg::CompressedTexture2D::9076574911768162803::1698155022::1698155022::1::::<><>::
-musicbox.tscn::PackedScene::1170297353606147110::1698155022::0::1::::<><>::uid://dbyxl87cdltle::::res://images/pixilart-sprite (1).png<>uid://dismheehylakr::::res://player.tscn<>res://background.gd<>uid://dvwlaqm422rfm::::res://player_2.tscn<>uid://j2uool24bdg7::::res://enemy_for_musicbox.tscn
-player.tscn::PackedScene::7758672920850341021::1698155022::0::1::::<><>::res://Area2D2.gd<>uid://cfjsddvnae4vm::::res://images/OIG.4lOpP3OxubDmjObot-removebg-preview.png<>res://animmcbox.gd<>uid://dgjdp53n8218h::::res://images/pixil-frame-0 (4).png
-player_2.tscn::PackedScene::8679312825253774114::1698155022::0::1::::<><>::res://player_2_area2d_script_script.gd<>uid://cfjsddvnae4vm::::res://images/OIG.4lOpP3OxubDmjObot-removebg-preview.png<>res://animmcbox.gd<>uid://buun64vfaio2o::::res://images/pixil-frame-0 (6).png
-player_2_area2d_script_script.gd::GDScript::-1::1698155022::0::1::::<>Area2D<>::
+icon.svg::CompressedTexture2D::9076574911768162803::1698155022::1698205096::1::::<><>::
+musicbox.tscn::PackedScene::1170297353606147110::1698208920::0::1::::<><>::uid://dbyxl87cdltle
+player.tscn::PackedScene::7758672920850341021::1698205076::0::1::::<><>::res://Area2D2.gd<>uid://cfjsddvnae4vm
+player_2.tscn::PackedScene::8679312825253774114::1698205076::0::1::::<><>::res://musicbox/player_2_area2d_script_script.gd<>uid://cfjsddvnae4vm
+player_2_area2d_script_script.gd::GDScript::-1::1698352314::0::1::::<>Area2D<>::
 player_musicbox.tscn::PackedScene::5588189760712852428::1698155022::0::1::::<><>::
 posiitoenemy.gd::GDScript::-1::1698155022::0::1::::<>AnimatedSprite2D<>::
-p_1_winscreen_mb.tscn::PackedScene::2650325485851179054::1698155022::0::1::::<><>::
-p_2_winscreen_mb.tscn::PackedScene::1403673573915593861::1698155022::0::1::::<><>::
-::res://images/::1698155022
-483-4839961_music-note-pixel-art-pain-d-pice-hd-removebg-preview.png::CompressedTexture2D::6906177656652426545::1698155022::1698155022::1::::<><>::
-OIG.4lOpP3OxubDmjObot-removebg-preview.png::CompressedTexture2D::5143463439216208202::1698155022::1698155022::1::::<><>::
-pixil-frame-0 (4).png::CompressedTexture2D::7599185070171788249::1698155022::1698155022::1::::<><>::
-pixil-frame-0 (6).png::CompressedTexture2D::3832331347897515644::1698155022::1698155022::1::::<><>::
-pixilart-sprite (1).png::CompressedTexture2D::7280413878180983310::1698155022::1698155022::1::::<><>::
-pixilart-sprite (2).png::CompressedTexture2D::870244152627042990::1698155022::1698155022::1::::<><>::
-pixilart-sprite (3).png::CompressedTexture2D::1118974220641920116::1698155022::1698155022::1::::<><>::
-tumblr_1d425fe86f1a296732b52b4d38d25bd1_7be00de4_540-1 (dragged).png::CompressedTexture2D::1053045718515134147::1698155022::1698155022::1::::<><>::
-tumblr_1d425fe86f1a296732b52b4d38d25bd1_7be00de4_540-2 (dragged).png::CompressedTexture2D::172456367640118796::1698155022::1698155022::1::::<><>::
-tumblr_1d425fe86f1a296732b52b4d38d25bd1_7be00de4_540-3 (dragged).png::CompressedTexture2D::5094807643881459818::1698155022::1698155022::1::::<><>::
-tumblr_1d425fe86f1a296732b52b4d38d25bd1_7be00de4_540-4 (dragged).png::CompressedTexture2D::7481667484459030408::1698155022::1698155022::1::::<><>::
-tumblr_1d425fe86f1a296732b52b4d38d25bd1_7be00de4_540-5 (dragged).png::CompressedTexture2D::342563813711388285::1698155022::1698155022::1::::<><>::
-tumblr_1d425fe86f1a296732b52b4d38d25bd1_7be00de4_540-6 (dragged).png::CompressedTexture2D::1395644896498294086::1698155022::1698155022::1::::<><>::
-tumblr_1d425fe86f1a296732b52b4d38d25bd1_7be00de4_540-7 (dragged).png::CompressedTexture2D::543095020225233337::1698155022::1698155022::1::::<><>::
-tumblr_1d425fe86f1a296732b52b4d38d25bd1_7be00de4_540-8 (dragged).png::CompressedTexture2D::3242263669622832272::1698155022::1698155022::1::::<><>::
-tumblr_1d425fe86f1a296732b52b4d38d25bd1_7be00de4_540-9 (dragged).png::CompressedTexture2D::8748780590433923580::1698155022::1698155022::1::::<><>::
-tumblr_1d425fe86f1a296732b52b4d38d25bd1_7be00de4_540-10 (dragged).png::CompressedTexture2D::7269256849392391896::1698155022::1698155022::1::::<><>::
-tumblr_1d425fe86f1a296732b52b4d38d25bd1_7be00de4_540-11 (dragged).png::CompressedTexture2D::4619785334252542772::1698155022::1698155022::1::::<><>::
-tumblr_1d425fe86f1a296732b52b4d38d25bd1_7be00de4_540-12 (dragged).png::CompressedTexture2D::6674972196263015197::1698155022::1698155022::1::::<><>::
-tumblr_1d425fe86f1a296732b52b4d38d25bd1_7be00de4_540-13 (dragged).png::CompressedTexture2D::6602841838819194315::1698155022::1698155022::1::::<><>::
-tumblr_1d425fe86f1a296732b52b4d38d25bd1_7be00de4_540-14 (dragged).png::CompressedTexture2D::9211038405158736905::1698155022::1698155022::1::::<><>::
+p_1_winscreen_mb.tscn::PackedScene::2650325485851179054::1698214191::0::1::::<><>::
+p_2_winscreen_mb.tscn::PackedScene::1403673573915593861::1698214190::0::1::::<><>::
+::res://musicbox/images/::1698205096
+483-4839961_music-note-pixel-art-pain-d-pice-hd-removebg-preview.png::CompressedTexture2D::6906177656652426545::1698155022::1698205096::1::::<><>::
+OIG.4lOpP3OxubDmjObot-removebg-preview.png::CompressedTexture2D::5143463439216208202::1698155022::1698205096::1::::<><>::
+pixil-frame-0 (4).png::CompressedTexture2D::7599185070171788249::1698155022::1698205096::1::::<><>::
+pixil-frame-0 (6).png::CompressedTexture2D::3832331347897515644::1698155022::1698205096::1::::<><>::
+pixilart-sprite (1).png::CompressedTexture2D::7280413878180983310::1698155022::1698205096::1::::<><>::
+pixilart-sprite (2).png::CompressedTexture2D::870244152627042990::1698155022::1698205096::1::::<><>::
+pixilart-sprite (3).png::CompressedTexture2D::1118974220641920116::1698155022::1698205096::1::::<><>::
+tumblr_1d425fe86f1a296732b52b4d38d25bd1_7be00de4_540-1 (dragged).png::CompressedTexture2D::1053045718515134147::1698155022::1698205096::1::::<><>::
+tumblr_1d425fe86f1a296732b52b4d38d25bd1_7be00de4_540-2 (dragged).png::CompressedTexture2D::172456367640118796::1698155022::1698205096::1::::<><>::
+tumblr_1d425fe86f1a296732b52b4d38d25bd1_7be00de4_540-3 (dragged).png::CompressedTexture2D::5094807643881459818::1698155022::1698205096::1::::<><>::
+tumblr_1d425fe86f1a296732b52b4d38d25bd1_7be00de4_540-4 (dragged).png::CompressedTexture2D::7481667484459030408::1698155022::1698205096::1::::<><>::
+tumblr_1d425fe86f1a296732b52b4d38d25bd1_7be00de4_540-5 (dragged).png::CompressedTexture2D::342563813711388285::1698155022::1698205096::1::::<><>::
+tumblr_1d425fe86f1a296732b52b4d38d25bd1_7be00de4_540-6 (dragged).png::CompressedTexture2D::1395644896498294086::1698155022::1698205096::1::::<><>::
+tumblr_1d425fe86f1a296732b52b4d38d25bd1_7be00de4_540-7 (dragged).png::CompressedTexture2D::543095020225233337::1698155022::1698205096::1::::<><>::
+tumblr_1d425fe86f1a296732b52b4d38d25bd1_7be00de4_540-8 (dragged).png::CompressedTexture2D::3242263669622832272::1698155022::1698205096::1::::<><>::
+tumblr_1d425fe86f1a296732b52b4d38d25bd1_7be00de4_540-9 (dragged).png::CompressedTexture2D::8748780590433923580::1698155022::1698205096::1::::<><>::
+tumblr_1d425fe86f1a296732b52b4d38d25bd1_7be00de4_540-10 (dragged).png::CompressedTexture2D::7269256849392391896::1698155022::1698205096::1::::<><>::
+tumblr_1d425fe86f1a296732b52b4d38d25bd1_7be00de4_540-11 (dragged).png::CompressedTexture2D::4619785334252542772::1698155022::1698205096::1::::<><>::
+tumblr_1d425fe86f1a296732b52b4d38d25bd1_7be00de4_540-12 (dragged).png::CompressedTexture2D::6674972196263015197::1698155022::1698205096::1::::<><>::
+tumblr_1d425fe86f1a296732b52b4d38d25bd1_7be00de4_540-13 (dragged).png::CompressedTexture2D::6602841838819194315::1698155022::1698205096::1::::<><>::
+tumblr_1d425fe86f1a296732b52b4d38d25bd1_7be00de4_540-14 (dragged).png::CompressedTexture2D::9211038405158736905::1698155022::1698205096::1::::<><>::

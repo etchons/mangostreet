@@ -1,0 +1,41 @@
+[gd_scene load_steps=9 format=3 uid="uid://qw5vkfiygcbm"]
+
+[ext_resource type="Texture2D" uid="uid://dbyxl87cdltle" path="res://musicbox/images/pixilart-sprite (1).png" id="1_qve5b"]
+[ext_resource type="Script" path="res://musicbox/background.gd" id="2_bbg60"]
+[ext_resource type="PackedScene" uid="uid://j2uool24bdg7" path="res://musicbox/enemy_for_musicbox.tscn" id="3_gbki7"]
+[ext_resource type="PackedScene" uid="uid://dismheehylakr" path="res://musicbox/player.tscn" id="4_wim05"]
+[ext_resource type="PackedScene" uid="uid://dvwlaqm422rfm" path="res://musicbox/player_2.tscn" id="5_dj60a"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_te0td"]
+atlas = ExtResource("1_qve5b")
+region = Rect2(0, 0, 1575, 1575)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eiho6"]
+atlas = ExtResource("1_qve5b")
+region = Rect2(1575, 0, 1575, 1575)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qqv8w"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_te0td")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eiho6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Platformer" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_qqv8w")
+script = ExtResource("2_bbg60")
+
+[node name="Area2D" parent="." instance=ExtResource("3_gbki7")]
+
+[node name="player" parent="." instance=ExtResource("4_wim05")]
+
+[node name="player2" parent="." instance=ExtResource("5_dj60a")]

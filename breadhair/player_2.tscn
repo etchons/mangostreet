@@ -1,0 +1,42 @@
+[gd_scene load_steps=7 format=3 uid="uid://bs32b5bimcf77"]
+
+[ext_resource type="Script" path="res://breadhair/player2.gd" id="1_04buk"]
+[ext_resource type="Texture2D" uid="uid://bes1fye0ofnuj" path="res://breadhair/bread.png" id="2_36jp3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vu6at"]
+atlas = ExtResource("2_36jp3")
+region = Rect2(0, 0, 800, 800)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wclnd"]
+atlas = ExtResource("2_36jp3")
+region = Rect2(800, 0, 800, 800)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4rpdc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vu6at")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wclnd")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2xhbk"]
+size = Vector2(59, 59)
+
+[node name="player2" type="CharacterBody2D"]
+script = ExtResource("1_04buk")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1, -58)
+scale = Vector2(0.13, 0.13)
+sprite_frames = SubResource("SpriteFrames_4rpdc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -67.5)
+scale = Vector2(1.00164, 1)
+shape = SubResource("RectangleShape2D_2xhbk")
