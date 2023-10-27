@@ -1,0 +1,74 @@
+[gd_scene load_steps=6 format=3 uid="uid://dlaecwqemq0u7"]
+
+[ext_resource type="Texture2D" uid="uid://drcmkf28awh5s" path="res://3d/car.vox.png" id="1_gwuv0"]
+[ext_resource type="Script" path="res://3d/player.gd" id="1_mi1l0"]
+[ext_resource type="ArrayMesh" uid="uid://darswvlxjuam8" path="res://3d/car.vox.obj" id="1_nik5v"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_42qj1"]
+albedo_texture = ExtResource("1_gwuv0")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ucsin"]
+points = PackedVector3Array(8.3, 7.29987, -2.00135, 8.3, 6.69947, -2.00135, 8.3, 7.29987, -5.50165, 8.19926, 8.19926, 3.89853, 8.19926, 5.29962, 7.79848, 8.3, 5.79928, -2.20118, 8.19926, 3.3993, 7.79848, 8.3, 6.69947, -5.50165, 8.19926, 6.59954, -8.70053, 8.19926, 8.19926, -6.7006, 5.69853, 8.3, -0.201244, 5.29881, 8.3, 1.8986, 5.19969, 8.3, 2.39985, 5.09894, 8.3, 2.69959, -8.20088, 8.19926, 3.89853, 6.59873, 8.3, -5.0004, 6.39886, 8.3, -3.90137, -8.20088, 5.29962, 7.79848, 6.79859, 4.89989, 8, 8.3, 5.79928, -3.50003, 6.79859, 3.79983, 8, 7.3998, 0, 6.99919, 8.19926, 3.3993, -8.70053, 7.79953, 5.89921, -8.80044, 5.69853, 4.29949, -9.3, 2.99957, 6.59954, -8.80044, 1.29992, 8.3, -6.10113, 3.89977, 8.3, -5.9013, 6.59873, 8.3, -5.30014, -8.20088, 8.19926, -6.7006, -5.10057, 8.3, 2.69959, -8.3, 7.29987, -2.00135, -5.20131, 8.3, 2.39985, -5.30043, 8.3, 1.8986, -5.70016, 8.3, -0.201244, -6.40049, 8.3, -3.90137, -6.60035, 8.3, -5.0004, -8.20088, 3.3993, 7.79848, -6.80022, 4.89989, 8, -6.80022, 3.79983, 8, -7.40143, 0, 6.99919, 7.3998, 0, -7.90123, 5.69853, 3.6999, -9.3, 7.79953, 5.59941, -8.80044, -5.70016, 4.29949, -9.3, -3.00119, 6.59954, -8.80044, -1.30155, 8.3, -6.10113, -8.20088, 6.59954, -8.70053, -8.3, 7.29987, -5.50165, -6.60035, 8.3, -5.30014, -3.90139, 8.3, -5.9013, -8.3, 6.69947, -2.00135, -8.3, 5.79928, -2.20118, -8.20088, 3.3993, -8.70053, -7.40143, 0, -7.90123, -5.70016, 3.6999, -9.3, -7.80116, 5.89921, -8.80044, -8.3, 6.69947, -5.50165, -8.3, 5.79928, -3.50003, -7.80116, 5.59941, -8.80044)
+
+[node name="player" type="VehicleBody3D"]
+gravity_scale = 4.0
+script = ExtResource("1_mi1l0")
+
+[node name="Body" type="MeshInstance3D" parent="."]
+material_override = SubResource("StandardMaterial3D_42qj1")
+mesh = ExtResource("1_nik5v")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_ucsin")
+
+[node name="BackLeft" type="VehicleWheel3D" parent="."]
+use_as_traction = true
+wheel_roll_influence = 2.08165e-12
+wheel_rest_length = 0.2
+wheel_friction_slip = 1.1
+suspension_travel = 0.15
+suspension_stiffness = 80.0
+
+[node name="Mesh" type="MeshInstance3D" parent="BackLeft"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.62085, 1.10284, -6.57513)
+
+[node name="FrontRight" type="VehicleWheel3D" parent="."]
+use_as_steering = true
+wheel_roll_influence = 0.01
+wheel_rest_length = 0.2
+wheel_friction_slip = 1.4
+suspension_travel = 0.15
+suspension_stiffness = 120.0
+
+[node name="Mesh" type="MeshInstance3D" parent="FrontRight"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.49583, 1.62229, 4.96362)
+skeleton = NodePath("../../BackLeft")
+
+[node name="FrontLeft" type="VehicleWheel3D" parent="."]
+use_as_steering = true
+wheel_roll_influence = 0.01
+wheel_rest_length = 0.2
+wheel_friction_slip = 1.4
+suspension_travel = 0.15
+suspension_stiffness = 120.0
+
+[node name="Mesh" type="MeshInstance3D" parent="FrontLeft"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.83345, 1.62229, 4.96362)
+skeleton = NodePath("../../BackLeft")
+
+[node name="BackRight" type="VehicleWheel3D" parent="."]
+use_as_traction = true
+wheel_roll_influence = 2.08165e-12
+wheel_rest_length = 0.2
+wheel_friction_slip = 1.1
+suspension_travel = 0.15
+suspension_stiffness = 80.0
+
+[node name="Mesh" type="MeshInstance3D" parent="BackRight"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.14328, 1.10284, -6.57513)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-1, -2.59973e-08, 8.34678e-08, 3.33008e-16, 0.954761, 0.297375, -8.74228e-08, 0.297375, -0.954761, 2.08165e-12, 15.771, -20.629)
+
+[node name="CenterOfMass" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.76069, 2.08478)

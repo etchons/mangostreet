@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://ccm503ia05cb1"]
+
+[ext_resource type="PackedScene" uid="uid://nwghoisnoimw" path="res://3d/model.gltf" id="1_3msxm"]
+
+[node name="world" type="Node3D"]
+
+[node name="model" parent="." instance=ExtResource("1_3msxm")]
+transform = Transform3D(0.09, 0, 0, 0, 0.09, 0, 0, 0, 0.09, -234.196, 625.589, 696.937)
+
+[editable path="model"]

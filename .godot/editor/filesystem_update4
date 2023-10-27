@@ -1,8 +1,3 @@
-res://breadhair/main.tscn
-res://breadhair/player.tscn
-res://breadhair/platform.tscn
-res://breadhair/player_2.tscn
-res://breadhair/player.gd
-res://musicbox/player_2_area2d_script_script.gd
-res://breadhair/RichTextLabel.gd
-res://breadhair/AnimatedSprite2D.gd
+res://3d/world.tscn
+res://3d/player.tscn
+res://3d/player.gd
