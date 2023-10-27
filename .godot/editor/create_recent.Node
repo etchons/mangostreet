@@ -1,3 +1,7 @@
+WorldEnvironment
+ShaderGlobalsOverride
+DirectionalLight3D
+Camera3D
 MeshInstance3D
 Node3D
 CollisionShape3D
@@ -5,7 +9,6 @@ StaticBody3D
 Area3D
 RigidBody3D
 CSGBox3D
-Camera3D
 VehicleWheel3D
 VehicleBody3D
 CharacterBody3D

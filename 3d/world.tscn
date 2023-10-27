@@ -1,10 +1,55 @@
-[gd_scene load_steps=2 format=3 uid="uid://ccm503ia05cb1"]
+[gd_scene load_steps=9 format=3 uid="uid://ccm503ia05cb1"]
 
 [ext_resource type="PackedScene" uid="uid://nwghoisnoimw" path="res://3d/model.gltf" id="1_3msxm"]
+[ext_resource type="PackedScene" uid="uid://cdxc2l8abi6q3" path="res://3d/homs.glb" id="2_h57aw"]
+[ext_resource type="Shader" path="res://3d/SkyShader.gdshader" id="3_bil30"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_pfsks"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w1iig"]
+next_pass = SubResource("ShaderMaterial_pfsks")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6l8ex"]
+shader = ExtResource("3_bil30")
+shader_parameter/skyColor = Color(0.858824, 0.654902, 0.498039, 1)
+
+[sub_resource type="Sky" id="Sky_fcfhp"]
+sky_material = SubResource("ShaderMaterial_6l8ex")
+
+[sub_resource type="Environment" id="Environment_f77qu"]
+background_mode = 2
+sky = SubResource("Sky_fcfhp")
+ambient_light_source = 3
+glow_enabled = true
+fog_enabled = true
+fog_light_color = Color(0.682353, 0.627451, 0.556863, 1)
+fog_light_energy = 0.75
+fog_density = 0.0053
+fog_height = 1024.0
+fog_height_density = -0.003
+volumetric_fog_albedo = Color(0.607843, 0.560784, 0.486275, 1)
+volumetric_fog_emission_energy = 857.66
+volumetric_fog_gi_inject = 8.8
+volumetric_fog_anisotropy = 0.33
+volumetric_fog_length = 737.68
+volumetric_fog_detail_spread = 6.0
+volumetric_fog_ambient_inject = 3.0
 
 [node name="world" type="Node3D"]
 
+[node name="homs" parent="." instance=ExtResource("2_h57aw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -403.069, 627.367, 657.832)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-4.37114e-08, 3.48787e-16, 1, 3.48787e-16, 1, -3.48787e-16, -1, 3.48787e-16, -4.37114e-08, -394.577, 639.433, 660.764)
+
 [node name="model" parent="." instance=ExtResource("1_3msxm")]
-transform = Transform3D(0.09, 0, 0, 0, 0.09, 0, 0, 0, 0.09, -234.196, 625.589, 696.937)
+transform = Transform3D(-5.24537e-09, 4.18544e-17, 0.12, 4.18544e-17, 0.12, -4.18544e-17, -0.12, 4.18544e-17, -5.24537e-09, -414.53, 631.1, 658.24)
+
+[node name="2476bf9b-a751-54d0-b775-522c771ce12b" parent="model/bone" index="16"]
+surface_material_override/0 = SubResource("StandardMaterial3D_w1iig")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_f77qu")
 
 [editable path="model"]

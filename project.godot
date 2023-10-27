@@ -21,6 +21,11 @@ config/icon="res://musicbox/icon.svg"
 window/size/viewport_width=1575
 window/size/viewport_height=1575
 
+[filesystem]
+
+import/blender/enabled=false
+import/fbx/enabled=false
+
 [input]
 
 load={
